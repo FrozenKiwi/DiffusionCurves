@@ -1,0 +1,4 @@
+#ifndef GLCONTAINER_H
+#define GLCONTAINER_H
+
+#endif // GLCONTAINER_H

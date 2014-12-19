@@ -6,6 +6,8 @@ DCMainWindow::DCMainWindow(QWidget *parent) :
     ui(new Ui::DCMainWindow)
 {
     ui->setupUi(this);
+
+    ui->frame->SetCanvas(800, 600);
 }
 
 DCMainWindow::~DCMainWindow()

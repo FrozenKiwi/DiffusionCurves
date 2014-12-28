@@ -19,17 +19,12 @@ public:
     QWidget *widget() const;
 
     // get renderer
-    GLWidget* GetGLWidget() { return this->glWidget; }
-
-    QSize GetCanvasSize() { return glWidget->GetCanvasSize(); }
+    GLWidget* GetGLWidget();
+    QSize GetCanvasSize();
+    void SetCanvas(int canvas_witdh, int canvas_height);
 
     // set up scrolls (vertical and horizontal)
     void SetScrolls();
-
-    void SetCanvas(int canvas_witdh, int canvas_height)
-    {
-        glWidget->SetCanvas(canvas_witdh, canvas_height);
-    }
 
 
 protected:

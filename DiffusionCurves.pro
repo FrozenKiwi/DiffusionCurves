@@ -16,12 +16,17 @@ SOURCES += main.cpp\
         DCMainWindow.cpp \
     GLContainer.cpp \
     GLWidget.cpp \
-    stdafx.cpp
+    stdafx.cpp \
+    CurveStorage.cpp \
+    CurveRDP.cpp
 
 HEADERS  += DCMainWindow.h \
     GLContainer.h \
     GLWidget.h \
-    stdafx.h
+    stdafx.h \
+    CurveStorage.h \
+    DCPoint.h \
+    CurveRDP.h
 
 FORMS    += DCMainWindow.ui
 
@@ -51,6 +56,10 @@ CONFIG += thread
 CONFIG += precompile_header
 PRECOMPILED_HEADER = stdafx.h
 HEADERS += stdafx.h
+
+#QMAKE_CFLAGS = -fpermissive
+#QMAKE_CXXFLAGS = -fpermissive
+#QMAKE_LFLAGS = -fpermissive
 
 #QT       += core gui
 #QT       += opengl

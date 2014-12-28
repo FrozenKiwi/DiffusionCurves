@@ -345,3 +345,20 @@ void GLContainer::keyReleaseEvent(QKeyEvent *event)
     //if(event->key() == Qt::Key_Shift && glWidget->GetDrawMode() == DRAW_PART_EXTRACTION)
     //    { this->glWidget->GetPartExtractor()->SetShiftButtonState(false); }
 }
+
+// get renderer
+GLWidget* GLContainer::GetGLWidget()
+{
+    return this->glWidget;
+}
+
+QSize GLContainer::GetCanvasSize()
+{
+    return glWidget->GetCanvasSize();
+}
+
+void GLContainer::SetCanvas(int canvas_witdh, int canvas_height)
+{
+    glWidget->SetCanvas(canvas_witdh, canvas_height);
+}
+

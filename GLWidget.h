@@ -3,6 +3,8 @@
 
 #include "stdafx.h"
 
+class CurveStorage;
+
 class GLWidget : public QGLWidget
 {
     Q_OBJECT
@@ -15,6 +17,8 @@ private:
     bool    _isMouseDown;
     float   _zoomFactor;
     QPoint  _scrollOffset;
+
+    CurveStorage* _curveStorage;
 
 public:
 

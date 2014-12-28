@@ -1,3 +1,5 @@
+
+#include "stdafx.h"
 #include "DCMainWindow.h"
 #include "ui_DCMainWindow.h"
 
